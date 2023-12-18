@@ -341,9 +341,10 @@ body {
 /* faq  */
 .faq {
     padding: 100px 0;
+    background: var(--Secondary-Color-System-cornflower_blue_light, #E5F0FF);
 }
 
-.accordion-custom h6 {
+.accordion-button h6 {
     color: #591D00;
     font-size: 14px;
     font-style: normal;
@@ -351,8 +352,33 @@ body {
     line-height: normal;
     border-radius: 6px;
     background: var(--Primary-Color-System-international_orange_light, #FFECE3);
-    padding: 4px;
-
-
+    padding: 6px;
 }
 
+.accordion-item {
+    border-radius: 8px;
+    background: var(--Primary-Color-System-white, #FFF);
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 50, 0.10);
+}
+
+
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: none !important;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.accordion-p {
+    color: var(--Gray-Color-System-gray_1, #000032);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+}
